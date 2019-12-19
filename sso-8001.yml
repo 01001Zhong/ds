@@ -31,6 +31,17 @@ eureka:
   instance:
     instance-id: ds-dept8001 #在eureka微服务列表里就不会显示主机名
     prefer-ip-address: true     #访问路径可以显示IP地址
+    
+feign:
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      enabled: true # 配置请求GZIP压缩
+      mime-types: ["text/xml","application/xml","application/json"] # 配置压缩支持的MIME TYPE
+      min-request-size: 2048 # 配置压缩数据大小的下限
+    response:
+      enabled: true # 配置响应GZIP压缩
 
 info:
   app.name: mrzhong-ds
