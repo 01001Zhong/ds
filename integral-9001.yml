@@ -47,7 +47,7 @@ server:
 spring:
   profiles: test
   application:
-    name: ds-sso #eureka微服务列表里显示的名字
+    name: ds-integral #eureka微服务列表里显示的名字
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver              # mysql驱动包
